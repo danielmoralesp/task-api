@@ -1,24 +1,15 @@
-# README
+# Tasks API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este proyecto muestra cómo crear un API con Ruby on Rails.
 
-Things you may want to cover:
+## Configuración
 
-* Ruby version
+1. Clona el proyecto.
+2. Ejecuta `bundle` para instalar las dependencias.
+3. Crea la base de datos y la migración ejecutando:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   ```
+   $ rails db:migrate
+   $ rails db:schema:load
+   ```
+  
