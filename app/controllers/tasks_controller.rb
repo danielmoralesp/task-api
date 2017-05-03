@@ -1,11 +1,12 @@
 class TasksController < ApplicationController
   def index
     tasks = Task.all
-    format.json { render json: tasks }
+    render json: tasks
   end
 
   def create
     task = Task.new(task_params)
+    task.user = current_user
 
     if task.save
       render json: task
