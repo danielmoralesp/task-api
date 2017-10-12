@@ -1,4 +1,7 @@
 class TasksController < ApplicationController
+
+  # controller de los tasks
+  
   def index
     tasks = Task.all
     render json: tasks
